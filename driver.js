@@ -1,4 +1,5 @@
-import { knightsTravails } from './travails.js';
+import { knightMoves } from './travails.js';
 
-const result = knightsTravails([0, 0], [1, 1]);
-console.log(result);
+const result = knightMoves([3, 3], [4, 3]);
+console.log(`You made it in ${result.length - 1} moves!  Here's your path:`);
+result.forEach((item) => console.log(item));
